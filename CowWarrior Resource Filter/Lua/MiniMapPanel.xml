@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Context ColorSet="Beige_Black_Alpha" Font="TwCenMT18" FontStyle="Shadow" >
+
+
+	<Instance Name="LegendKey">
+		<Stack ID="Item" StackGrowth="Right" >
+			<Box Size="14,14" Color="255.255.200.255" >
+				<Box ID="KeyColor" Anchor="C,C" Size="12,12" Color="200,200,200,255" />
+			</Box>
+			<Label ID="KeyName" Anchor="L,T" Offset="5.0" WrapWidth="300" ColorSet="Beige_Black" LeadingOffset="-8" Font="TwCenMT18" FontStyle="Shadow"  String="TXT_KEY_STRAT_ICON_MODE"/>
+		</Stack>
+	</Instance>
+
+	<Stack ID="SideStack" Padding="-20" Anchor="R,B" Offset="377,-39" StackGrowth="Right" >
+
+		<Grid ID="LegendFrame" Anchor="R,B" Padding="30,54" Offset="0,0" Style="Grid9DetailSix140" Hidden="1" ConsumeMouse="1" >
+			<Stack ID="LegendStack" Anchor="C,C" Padding="5" Offset="0,0" StackGrowth="Bottom" >
+				<Label ID="OverlayTitle" Anchor="C,T" Offset="0,0" ColorSet="Beige_Black" Font="TwCenMT18" FontStyle="Shadow"  String="TXT_KEY_STRAT_ICON_MODE"/>
+				<Box Size="200,1" Color="0,0,0,0" />
+				<Image Anchor="C,T" Offset="0,0" Texture="bar300x2.dds" TextureOffset="100,0" Size="140.1" />
+			</Stack>
+		</Grid>
+
+		<Grid ID="OptionsPanel" Anchor="R,B" Size="300,300" Color="White.256" Style="Grid9DetailSix140" Padding="30,46" Hidden="true" ConsumeMouse="1" >
+			<Stack Anchor="C,C" Padding="0" Offset="0,5" StackGrowth="Bottom" ID="MainStack" >
+				<Stack Anchor="C,T" Offset="0,0" Padding="0" StackGrowth="Bottom" ID="StrategicStack" >
+					<Label Anchor="L,T" ColorSet="Beige_Black" Font="TwCenMT18" Offset="0,5" FontStyle="Shadow" ID="OverlayName" String="TXT_KEY_STRAT_OVERLAY"/>
+					<PullDown Style="GenericPullDown" ScrollThreshold="256" Offset="0,5" Size="210,27" SpaceForScroll="0" ID="OverlayDropDown"/>
+					<Label Anchor="L,T" ColorSet="Beige_Black" Font="TwCenMT18" Offset="0,5" FontStyle="Shadow" ID="IconName" String="TXT_KEY_STRAT_ICON_MODE"/>
+					<PullDown Style="GenericPullDown" ScrollThreshold="256" Offset="0,5" Size="210,27" SpaceForScroll="0" ID="IconDropDown"/>
+
+					<CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="0,0" TextOffset="40,0" IsChecked="1" ID="ShowFeatures" String="TXT_KEY_STRAT_FEATURES" />
+					<CheckBox Anchor="L,T" TextAnchorSide="Right" Offset="0,0" TextOffset="40,0" IsChecked="1" ID="ShowFogOfWar" String="TXT_KEY_STRAT_FOW" />
+					<Box Anchor="C,T" Offset="0,5" Size="175,1" Color="Beige,120" />
+				</Stack>
+
+
+				<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="40,0" IsChecked="0" ID="HideRecommendation" String="TXT_KEY_MAP_OPTIONS_RECOMMENDATIONS" />
+				<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="40,0" IsChecked="0" ID="ShowResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_ICONS" />
+
+
+				<Label Anchor="L,T" ColorSet="Beige_Black" Font="TwCenMT18" Offset="0,0" FontStyle="Shadow" ID="ShowResourceGroup" String="TXT_KEY_MAP_OPTIONS_RESOURCE_TITLE_Resource"/>
+				<Box Size="200,200" Color="Beige,120">
+					<ScrollPanel ID="ResourcePanel" Anchor="L,T" Size="200,200" Vertical="1">
+						<Stack ID="ResourceStack" Anchor="L,T" StackGrowth="Bottom" Padding="5">
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowAntiquityResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Antiquity" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowAluminiumResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Aluminium" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowCoalResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Coal" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowHorseResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Horse" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowIronResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Iron" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowOilResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Oil" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowUraniumResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Uranium" />
+						</Stack>
+
+						<ScrollBar Offset="0,18" Anchor="R,T" AnchorSide="O,I" Style="VertSlider" Length="164" />
+						<UpButton Offset="0,0" Anchor="R,T" AnchorSide="O,I" Style="ScrollBarUp" />
+						<DownButton Offset="0,1" Anchor="R,B" AnchorSide="O,I" Style="ScrollBarDown" />
+					</ScrollPanel>
+				</Box>
+				
+
+				<Label Anchor="L,T" ColorSet="Beige_Black" Font="TwCenMT18" Offset="0,0" FontStyle="Shadow" ID="ShowLuxuryGroup" String="TXT_KEY_MAP_OPTIONS_RESOURCE_TITLE_Luxury"/>
+				<Box Size="200,200" Color="Beige,120">
+					<ScrollPanel ID="LuxuryPanel" Anchor="L,T" Size="200,200" Vertical="1">
+						<Stack ID="LuxuryStack" Anchor="L,T" StackGrowth="Bottom" Padding="5">
+							<!--<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowLuxuryResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Luxury" />-->
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowCitrusResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Citrus" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowClovesResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Cloves" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowCocoaResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Cocoa" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowCopperResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Copper" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowCottonResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Cotton" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowCrabResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Crab" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowDyesResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Dyes" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowFursResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Furs" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowGemsResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Gems" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowGoldResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Gold" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowIncenseResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Incense" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowIvoryResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Ivory" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowJewelryResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Jewelry" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowMarbleResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Marble" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowNutmegResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Nutmeg" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowPearlsResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Pearls" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowPepperResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Pepper" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowPorcelainResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Porcelain" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowSaltResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Salt" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowSilkResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Silk" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowSilverResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Silver" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowSpicesResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Spices" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowSugarResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Sugar" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowTrufflesResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Truffles" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowWhalesResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Whales" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowWineResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Wine" />
+						</Stack>
+
+						<ScrollBar Offset="0,18" Anchor="R,T" AnchorSide="O,I" Style="VertSlider" Length="164" />
+						<UpButton Offset="0,0" Anchor="R,T" AnchorSide="O,I" Style="ScrollBarUp" />
+						<DownButton Offset="0,1" Anchor="R,B" AnchorSide="O,I" Style="ScrollBarDown" />
+					</ScrollPanel>
+				</Box>
+
+
+				<Label Anchor="L,T" ColorSet="Beige_Black" Font="TwCenMT18" Offset="0,0" FontStyle="Shadow" ID="ShowBonusGroup" String="TXT_KEY_MAP_OPTIONS_RESOURCE_TITLE_Bonus"/>
+				<Box Size="200,200" Color="Beige,120">
+					<ScrollPanel ID="BonusPanel" Anchor="L,T" Size="200,200" Vertical="1">
+						<Stack ID="BonusStack" Anchor="L,T" StackGrowth="Bottom" Padding="5">
+							<!--<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowBonusResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Bonus" />-->
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowBananaResource" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Banana" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowBisonResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Bison" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowCattleResource" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Cattle" />							
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowDeerResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Deer" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowFishResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Fish" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowSheepResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Sheep" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowStoneResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Stone" />
+							<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="60,0" IsChecked="1" ID="ShowWheatResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_Wheat" />							
+						</Stack>
+
+						<ScrollBar Offset="0,18" Anchor="R,T" AnchorSide="O,I" Style="VertSlider" Length="164" />
+						<UpButton Offset="0,0" Anchor="R,T" AnchorSide="O,I" Style="ScrollBarUp" />
+						<DownButton Offset="0,1" Anchor="R,B" AnchorSide="O,I" Style="ScrollBarDown" />
+					</ScrollPanel>
+				</Box>
+
+
+				<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="40,0" IsChecked="0" ID="ShowYield" String="TXT_KEY_MAP_OPTIONS_YIELD_ICONS" />
+				<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="40,0" IsChecked="0" ID="ShowGrid" String="TXT_KEY_MAP_OPTIONS_HEX_GRID" />
+				<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="40,0" IsChecked="0" ID="ShowTrade" String="TXT_KEY_MAP_OPTIONS_TRADE_ROUTES" />
+				<Box Anchor="C,T" Size="210,1" Color="0,0,0,0" />
+			</Stack>
+		</Grid>
+	</Stack>
+	<Image Anchor="R,B"  Offset="337,0" Texture="assets\UI\Art\WorldView\BottomRight128x224.dds" Size="128.224" />
+
+	<Stack Anchor="R,B" Offset="346,1" Padding="0" StackGrowth="Top" >
+
+		<Button ConsumeMouseOver="1" Anchor="C,T" Offset="0,0" Size="45.45" Texture="assets\UI\Art\Icons\MainStrategicButton.dds" ID="StrategicViewButton" Hidden="0" ToolTip="TXT_KEY_POP_STRATEGIC_VIEW_TT" >
+			<ShowOnMouseOver>
+				<Image Anchor="C,C" Offset="0,0" Size="45.45" Texture="assets\UI\Art\Icons\MainStrategicButton.dds" ID="StrategicMO" />
+				<AlphaAnim Anchor="C,C" Offset="0,0" Size="45.45"  TextureOffset="0.0" Texture="assets\UI\Art\Icons\MainStrategicButtonHL.dds" ID="StrategicHL"  Pause="0" Cycle="Bounce" Speed="2" AlphaStart="0.95" AlphaEnd="0.55"/>
+			</ShowOnMouseOver>
+		</Button>
+
+		<Button ConsumeMouseOver="1" Anchor="C,T" Size="45.45" Texture="assets\UI\Art\Notification\NotificationNotes.dds" ID="MapOptionsButton" ToolTip="TXT_KEY_STRAT_MAP_OPTIONS_TT" Hidden="0" >
+			<ShowOnMouseOver>
+				<Image Anchor="R,T" Offset="0,0" Size="45.45" Texture="assets\UI\Art\Notification\NotificationNotes.dds" />
+				<AlphaAnim Anchor="R,T" Offset="0,0" Size="45.45"  TextureOffset="0.0" Texture="assets\UI\Art\Notification\NotificationNotesHL.dds"  Pause="0" Cycle="Bounce" Speed="2" AlphaStart="0.95" AlphaEnd="0.55"/>
+			</ShowOnMouseOver>
+		</Button>
+
+	</Stack>
+
+
+
+	<Grid Size="355,276" Anchor="R,B" Offset="-8,-39" Color="White.255" Style="Grid9DetailSix140" >
+
+		<Image Anchor="R,T" AnchorSide="I.O" Offset="3,-33" Texture="assets/DLC/Expansion/UI/Art/Controls/LowerRightCorner_MiniMap.dds" Size="101.72" />
+
+		<Box Anchor="L,T" Size="320,190" Offset="18,43" Color="0,0,0,0" >
+
+			<Button Anchor="C,C" Size="320,190" ID="Minimap" NoStateChange="1" ConsumeMouse="1" >
+			</Button>
+
+		</Box>
+
+	</Grid>
+
+
+
+</Context>
