@@ -5,10 +5,19 @@
     <ProjectGuid>{345f8d0a-4f7e-4e01-bd0d-01f3adce74d5}</ProjectGuid>
     <Name>CowWarrior's Resource Filter</Name>
     <Guid>4b4ae7b1-fbe0-455c-9229-10055f50b156</Guid>
-    <ModVersion>1</ModVersion>
-    <Stability>Alpha</Stability>
+    <ModVersion>2</ModVersion>
+    <Stability>Beta</Stability>
     <Teaser>This mod adds a resource filter allowing you to quickly find a specific resource, luxury or antiquity site on the map.</Teaser>
-    <Description>This mod adds a resource filter allowing you to quickly find a specific resource, luxury or antiquity site on the map.</Description>
+    <Description>This mod adds a resource filter allowing you to quickly find a specific resource, luxury or antiquity site on the map.
+
+Known Bugs:
+- Cattle does not toggle
+- Double Icon display in Strategic Mode
+
+ToDo:
+- Add Check All / Clear All
+- Add resource icons beside text
+- Split Hidden Anitquity Sites into it's own selection</Description>
     <Authors>CowWarrior</Authors>
     <SpecialThanks>John Carter / Antiquity Site Icons Filter</SpecialThanks>
     <AffectsSavedGames>false</AffectsSavedGames>
@@ -26,6 +35,11 @@
         <Type>UpdateDatabase</Type>
         <FileName>XML/GameText.xml</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>XML/ResourceFilterText.xml</FileName>
+      </Action>
     </ModActions>
     <ModDependencies>
       <Association xmlns="">
@@ -37,6 +51,14 @@
       </Association>
     </ModDependencies>
     <Homepage>https://github.com/CowWarrior/civ-v-resource-filter</Homepage>
+    <ModContent>
+      <Content>
+        <Type>InGameUIAddin</Type>
+        <Name>UIResourceFilterDialog</Name>
+        <Description>Dialog allowing to filter resource icons on map.</Description>
+        <FileName>UI/ResourceFilterDialog.xml</FileName>
+      </Content>
+    </ModContent>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -51,6 +73,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Lua" />
+    <Folder Include="UI" />
     <Folder Include="XML" />
   </ItemGroup>
   <ItemGroup>
@@ -78,7 +101,19 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="UI\ResourceFilterDialog.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="UI\ResourceFilterDialog.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="XML\GameText.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="XML\ResourceFilterText.xml">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

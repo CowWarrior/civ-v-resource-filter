@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by ModBuddy on 3/15/2020 2:40:09 PM -->
+<GameData>
+	<Language_en_US>
+		<!-- Dialog Text -->		
+		<Row Tag="TXT_KEY_RESOURCE_FILTER_DIALOG_TITLE">
+			<Text>Filter Resources</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_FILTER_DIALOG_BUTTON_OK">
+			<Text>OK</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_FILTER_DIALOG_BUTTON_OK_TT">
+			<Text>Closes the filter dialog.</Text>
+		</Row>
+
+		<!-- Resource Filter Names -->
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Antiquity">
+			<Text>Antiquity Sites</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Aluminium">
+			<Text>Aluminium</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Bonus">
+			<Text>Bonus Resources</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Coal">
+			<Text>Coal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Horse">
+			<Text>Horses</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Iron">
+			<Text>Iron</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Luxury">
+			<Text>Luxury Resources</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Oil">
+			<Text>Oil</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Uranium">
+			<Text>Uranium</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_TITLE_Resource">
+			<Text>Base Resources:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Cotton">
+			<Text>Cotton</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Furs">
+			<Text>Furs</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Dyes">
+			<Text>Dyes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Copper">
+			<Text>Copper</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Marble">
+			<Text>Marble</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Jewelry">
+			<Text>Jewelry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Nutmeg">
+			<Text>Nutmeg</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Crab">
+			<Text>Crab</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Citrus">
+			<Text>Citrus</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Spices">
+			<Text>Spices</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Ivory">
+			<Text>Ivory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Incense">
+			<Text>Incense</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Gold">
+			<Text>Gold</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Pearls">
+			<Text>Pearls</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Cloves">
+			<Text>Cloves</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Salt">
+			<Text>Salt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Gems">
+			<Text>Gems</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Sugar">
+			<Text>Sugar</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Silk">
+			<Text>Silk</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Wine">
+			<Text>Wine</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Silver">
+			<Text>Silver</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Truffles">
+			<Text>Truffles</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Porcelain">
+			<Text>Porcelain</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Pepper">
+			<Text>Pepper</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Whales">
+			<Text>Whales</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Cocoa">
+			<Text>Cocoa</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_TITLE_Luxury">
+			<Text>Luxury Resources:</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Banana">
+			<Text>Bananas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Cattle">
+			<Text>Cattle</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Bison">
+			<Text>Bison</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Fish">
+			<Text>Fish</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Stone">
+			<Text>Stone</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Wheat">
+			<Text>Wheat</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Sheep">
+			<Text>Sheep</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Deer">
+			<Text>Deer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_TITLE_Bonus">
+			<Text>Bonus Resources:</Text>
+		</Row>
+				
+		
+		
+	</Language_en_US>
+</GameData>
