@@ -37,9 +37,15 @@
 				<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="40,0" IsChecked="0" ID="HideRecommendation" String="TXT_KEY_MAP_OPTIONS_RECOMMENDATIONS" />
 				<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="40,0" IsChecked="0" ID="ShowResources" String="TXT_KEY_MAP_OPTIONS_RESOURCE_ICONS" />
 
-				<GridButton ID="btnFilterResources" Size="140,24" Anchor="C,T" Offset="10,0" Style="BaseButton" ToolTip="TXT_KEY_MAP_OPTIONS_RESOURCE_FILTER_TT">
-					<Label Anchor="C,C" Offset="0,-2" String="TXT_KEY_MAP_OPTIONS_RESOURCE_FILTER_BUTTON" Font="TwCenMT18" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" />
-				</GridButton>
+				<Stack Anchor="L,T" Padding="0" Offset="0,0" StackGrowth="Right" ID="ResourceFilterStack" >
+					<GridButton ID="btnFilterResources" Size="100,24" Anchor="C,T" Offset="10,0" Style="BaseButton" ToolTip="TXT_KEY_MAP_OPTIONS_RESOURCE_FILTER_TT">
+						<Label Anchor="C,C" Offset="0,-2" String="TXT_KEY_MAP_OPTIONS_RESOURCE_FILTER_BUTTON" Font="TwCenMT18" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" />
+					</GridButton>
+					<GridButton ID="btnFindResources" Size="100,24" Anchor="C,T" Offset="10,0" Style="BaseButton" ToolTip="TXT_KEY_MAP_OPTIONS_RESOURCE_FIND_TT">
+						<Label Anchor="C,C" Offset="0,-2" String="TXT_KEY_MAP_OPTIONS_RESOURCE_FIND_BUTTON" Font="TwCenMT18" FontStyle="Shadow" ColorSet="Beige_Black_Alpha" />
+					</GridButton>
+
+				</Stack>
 
 				<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="40,0" IsChecked="0" ID="ShowYield" String="TXT_KEY_MAP_OPTIONS_YIELD_ICONS" />
 				<CheckBox Anchor="L,T"  TextAnchorSide="Right" Offset="0,0" TextOffset="40,0" IsChecked="0" ID="ShowGrid" String="TXT_KEY_MAP_OPTIONS_HEX_GRID" />

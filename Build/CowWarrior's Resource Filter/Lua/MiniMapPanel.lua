@@ -14,6 +14,11 @@ function OnbtnFilterResourcesClick()
 end
 Controls.btnFilterResources:RegisterCallback(Mouse.eLClick, OnbtnFilterResourcesClick);
 
+function OnbtnFindNextResource()
+	LuaEvents.SpotNextResourcePlot();
+end
+Controls.btnFindResources:RegisterCallback(Mouse.eLClick, OnbtnFindNextResource)
+
 ----------------------------------------------------------------        
 ----------------------------------------------------------------        
 function OnMinimapInfo( uiHandle, width, height, paddingX )

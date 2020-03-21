@@ -5,19 +5,13 @@
     <ProjectGuid>{345f8d0a-4f7e-4e01-bd0d-01f3adce74d5}</ProjectGuid>
     <Name>CowWarrior's Resource Filter</Name>
     <Guid>4b4ae7b1-fbe0-455c-9229-10055f50b156</Guid>
-    <ModVersion>2</ModVersion>
-    <Stability>Beta</Stability>
+    <ModVersion>4</ModVersion>
+    <Stability>Stable</Stability>
     <Teaser>This mod adds a resource filter allowing you to quickly find a specific resource, luxury or antiquity site on the map.</Teaser>
-    <Description>This mod adds a resource filter allowing you to quickly find a specific resource, luxury or antiquity site on the map.
+    <Description>This mod adds a resource filter allowing you to quickly find a specific resource, luxury or antiquity site on the map. It also allows you to locate and find the resources on the map.
 
 Known Bugs:
-- Cattle does not toggle
-- Double Icon display in Strategic Mode
-
-ToDo:
-- Add Check All / Clear All
-- Add resource icons beside text
-- Split Hidden Anitquity Sites into it's own selection</Description>
+- Double Icon display in Strategic Mode</Description>
     <Authors>CowWarrior</Authors>
     <SpecialThanks>John Carter / Antiquity Site Icons Filter</SpecialThanks>
     <AffectsSavedGames>false</AffectsSavedGames>
@@ -77,14 +71,6 @@ ToDo:
     <Folder Include="XML" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="2020-03-15_11-28-01.jpg">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="2020-03-15_11-28-01_512.jpg">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="Lua\MiniMapPanel.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>

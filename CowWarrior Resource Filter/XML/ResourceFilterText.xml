@@ -13,141 +13,159 @@
 			<Text>Closes the filter dialog.</Text>
 		</Row>
 
+		
+		<Row Tag="TXT_KEY_RESOURCE_FILTER_DIALOG_BUTTON_Clear_TT">
+			<Text>Unchecks all items of the current resource  category.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_FILTER_DIALOG_BUTTON_Clear">
+			<Text>Clear All</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_FILTER_DIALOG_BUTTON_All_TT">
+			<Text>Checks all items of the current resource  category.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_RESOURCE_FILTER_DIALOG_BUTTON_All">
+			<Text>Select All</Text>
+		</Row>
+
+
 		<!-- Resource Filter Names -->
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Antiquity">
-			<Text>Antiquity Sites</Text>
+			<Text>[ICON_RES_ARTIFACTS] Antiquity Sites</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Hidden_Antiquity">
+			<Text>[ICON_RES_HIDDEN_ARTIFACTS] Hidden Antiquity Sites</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Aluminium">
-			<Text>Aluminium</Text>
+			<Text>[ICON_RES_ALUMINUM] Aluminium</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Bonus">
 			<Text>Bonus Resources</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Coal">
-			<Text>Coal</Text>
+			<Text>[ICON_RES_COAL] Coal</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Horse">
-			<Text>Horses</Text>
+			<Text>[ICON_RES_HORSE] Horses</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Iron">
-			<Text>Iron</Text>
+			<Text>[ICON_RES_IRON] Iron</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Luxury">
 			<Text>Luxury Resources</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Oil">
-			<Text>Oil</Text>
+			<Text>[ICON_RES_OIL] Oil</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Uranium">
-			<Text>Uranium</Text>
+			<Text>[ICON_RES_URANIUM] Uranium</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_TITLE_Resource">
-			<Text>Base Resources:</Text>
+			<Text>Strategic Resources:</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Cotton">
-			<Text>Cotton</Text>
+			<Text>[ICON_RES_COTTON] Cotton</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Furs">
-			<Text>Furs</Text>
+			<Text>[ICON_RES_FUR] Furs</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Dyes">
-			<Text>Dyes</Text>
+			<Text>[ICON_RES_DYE] Dyes</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Copper">
-			<Text>Copper</Text>
+			<Text>[ICON_RES_COPPER] Copper</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Marble">
-			<Text>Marble</Text>
+			<Text>[ICON_RES_MARBLE] Marble</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Jewelry">
-			<Text>Jewelry</Text>
+			<Text>[ICON_RES_JEWELRY] Jewelry</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Nutmeg">
-			<Text>Nutmeg</Text>
+			<Text>[ICON_RES_NUTMEG] Nutmeg</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Crab">
-			<Text>Crab</Text>
+			<Text>[ICON_RES_CRAB] Crab</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Citrus">
-			<Text>Citrus</Text>
+			<Text>[ICON_RES_CITRUS] Citrus</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Spices">
-			<Text>Spices</Text>
+			<Text>[ICON_RES_SPICES] Spices</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Ivory">
-			<Text>Ivory</Text>
+			<Text>[ICON_RES_IVORY] Ivory</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Incense">
-			<Text>Incense</Text>
+			<Text>[ICON_RES_INCENSE] Incense</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Gold">
-			<Text>Gold</Text>
+			<Text>[ICON_RES_GOLD] Gold</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Pearls">
-			<Text>Pearls</Text>
+			<Text>[ICON_RES_PEARLS] Pearls</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Cloves">
-			<Text>Cloves</Text>
+			<Text>[ICON_RES_CLOVES] Cloves</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Salt">
-			<Text>Salt</Text>
+			<Text>[ICON_RES_SALT] Salt</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Gems">
-			<Text>Gems</Text>
+			<Text>[ICON_RES_GEMS] Gems</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Sugar">
-			<Text>Sugar</Text>
+			<Text>[ICON_RES_SUGAR] Sugar</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Silk">
-			<Text>Silk</Text>
+			<Text>[ICON_RES_SILK] Silk</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Wine">
-			<Text>Wine</Text>
+			<Text>[ICON_RES_WINE] Wine</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Silver">
-			<Text>Silver</Text>
+			<Text>[ICON_RES_SILVER] Silver</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Truffles">
-			<Text>Truffles</Text>
+			<Text>[ICON_RES_TRUFFLES] Truffles</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Porcelain">
-			<Text>Porcelain</Text>
+			<Text>[ICON_RES_PORCELAIN] Porcelain</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Pepper">
-			<Text>Pepper</Text>
+			<Text>[ICON_RES_PEPPER] Pepper</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Whales">
-			<Text>Whales</Text>
+			<Text>[ICON_RES_WHALE] Whales</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Cocoa">
-			<Text>Cocoa</Text>
+			<Text>[ICON_RES_COCOA] Cocoa</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_TITLE_Luxury">
 			<Text>Luxury Resources:</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Banana">
-			<Text>Bananas</Text>
+			<Text>[ICON_RES_BANANA] Bananas</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Cattle">
-			<Text>Cattle</Text>
+			<Text>[ICON_RES_COW] Cattle</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Bison">
-			<Text>Bison</Text>
+			<Text>[ICON_RES_BISON] Bison</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Fish">
-			<Text>Fish</Text>
+			<Text>[ICON_RES_FISH] Fish</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Stone">
-			<Text>Stone</Text>
+			<Text>[ICON_RES_STONE] Stone</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Wheat">
-			<Text>Wheat</Text>
+			<Text>[ICON_RES_WHEAT] Wheat</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Sheep">
-			<Text>Sheep</Text>
+			<Text>[ICON_RES_SHEEP] Sheep</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_Deer">
-			<Text>Deer</Text>
+			<Text>[ICON_RES_DEER] Deer</Text>
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_TITLE_Bonus">
 			<Text>Bonus Resources:</Text>

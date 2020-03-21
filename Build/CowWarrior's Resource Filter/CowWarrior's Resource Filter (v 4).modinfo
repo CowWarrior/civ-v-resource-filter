@@ -1,19 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="4b4ae7b1-fbe0-455c-9229-10055f50b156" version="2">
+<Mod id="4b4ae7b1-fbe0-455c-9229-10055f50b156" version="4">
   <Properties>
     <Name>CowWarrior's Resource Filter</Name>
-    <Stability>Beta</Stability>
     <Teaser>This mod adds a resource filter allowing you to quickly find a specific resource, luxury or antiquity site on the map.</Teaser>
-    <Description>This mod adds a resource filter allowing you to quickly find a specific resource, luxury or antiquity site on the map.
+    <Description>This mod adds a resource filter allowing you to quickly find a specific resource, luxury or antiquity site on the map. It also allows you to locate and find the resources on the map.
 
 Known Bugs:
-- Cattle does not toggle
-- Double Icon display in Strategic Mode
-
-ToDo:
-- Add Check All / Clear All
-- Add resource icons beside text
-- Split Hidden Anitquity Sites into it's own selection</Description>
+- Double Icon display in Strategic Mode</Description>
     <Authors>CowWarrior</Authors>
     <SpecialThanks>John Carter / Antiquity Site Icons Filter</SpecialThanks>
     <HideSetupGame>0</HideSetupGame>
@@ -34,16 +27,14 @@ ToDo:
   <References />
   <Blocks />
   <Files>
-    <File md5="EB4C1EA7063C41CC5356280CB077CB38" import="0">2020-03-15_11-28-01.jpg</File>
-    <File md5="B424CFFFB3F8B4C5AB823E18FEBB2C8E" import="0">2020-03-15_11-28-01_512.jpg</File>
-    <File md5="410C90C7F6700CDE5786B25AC8A04F45" import="1">Lua/MiniMapPanel.lua</File>
-    <File md5="9DB465D840B9EB3D26735DDB2AE6B498" import="1">Lua/MiniMapPanel.xml</File>
-    <File md5="C1584FDE51CFDAE720714D95144366AA" import="1">Lua/ResourceIconManager.lua</File>
+    <File md5="894D1A2CAA93B3A0BE552CBF63427669" import="1">Lua/MiniMapPanel.lua</File>
+    <File md5="6499FE1A0D3215E6837E215C4C74F7A6" import="1">Lua/MiniMapPanel.xml</File>
+    <File md5="A867C814866268499112C24161CAA7AB" import="1">Lua/ResourceIconManager.lua</File>
     <File md5="4BA35F5AF4C75BDBA39243B02129F2D9" import="1">Lua/ResourceIconManager.xml</File>
-    <File md5="E34995AEF721BC16A5D88B480C97AF7A" import="0">UI/ResourceFilterDialog.lua</File>
-    <File md5="36CB65A4D384C4F86116F903BD74DA30" import="0">UI/ResourceFilterDialog.xml</File>
-    <File md5="D3377481BBDACF7FD023B9549D92A945" import="0">XML/GameText.xml</File>
-    <File md5="2E7E2CD9C38298FCD95343E70057D5F0" import="0">XML/ResourceFilterText.xml</File>
+    <File md5="7CAA5BC0C87BB23704B89D06C578927C" import="0">UI/ResourceFilterDialog.lua</File>
+    <File md5="487F367260E30CEE42FB33288F5F463B" import="0">UI/ResourceFilterDialog.xml</File>
+    <File md5="203D7B4B12A491EBC3F88E3C3BB18F3C" import="0">XML/GameText.xml</File>
+    <File md5="E7BF38C143175560CE3892C6EF122CF7" import="0">XML/ResourceFilterText.xml</File>
   </Files>
   <Actions>
     <OnModActivated>

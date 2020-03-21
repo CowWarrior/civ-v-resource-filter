@@ -16,11 +16,146 @@ function ShowFilterDialog()
 end
 LuaEvents.LuaEventShowResourceFilterDialog.Add(ShowFilterDialog) --Make event available to all contexts
 
-
 function HideFilterDialog()
 	ContextPtr:SetHide(true)
 end
 LuaEvents.LuaEventHideResourceFilterDialog.Add(HideFilterDialog)  --Make event available to all contexts
+
+
+function SetAllStrategic(val)
+	Controls.ShowAntiquityResources:SetCheck(val);
+	Controls.ShowHiddenAntiquityResources:SetCheck(val);
+	Controls.ShowAluminiumResources:SetCheck(val);
+	Controls.ShowCoalResources:SetCheck(val);
+	Controls.ShowHorseResources:SetCheck(val);
+	Controls.ShowIronResources:SetCheck(val);
+	Controls.ShowOilResources:SetCheck(val);
+	Controls.ShowUraniumResources:SetCheck(val);
+
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_ARTIFACTS", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_HIDDEN_ARTIFACTS", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_ALUMINUM", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_COAL", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_HORSE", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_IRON", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_OIL", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_URANIUM", val);
+
+	LuaEvents.RefreshResourceIcons(); --only refresh once
+	Events.StrategicViewStateChanged();
+end
+
+function OnbtnStrategicClearClick()
+	SetAllStrategic(false);
+end
+Controls.btnStrategicClear:RegisterCallback(Mouse.eLClick, OnbtnStrategicClearClick) --Bind event to button
+
+function OnbtnStrategicAllClick()
+	SetAllStrategic(true);
+end
+Controls.btnStrategicAll:RegisterCallback(Mouse.eLClick, OnbtnStrategicAllClick) --Bind event to button
+
+function SetAllLuxury(val)
+	Controls.ShowCottonResources:SetCheck(val);
+	Controls.ShowFursResources:SetCheck(val);
+	Controls.ShowDyesResources:SetCheck(val);
+	Controls.ShowCopperResources:SetCheck(val);
+	Controls.ShowMarbleResources:SetCheck(val);
+	Controls.ShowJewelryResources:SetCheck(val);
+	Controls.ShowNutmegResources:SetCheck(val);
+	Controls.ShowCrabResources:SetCheck(val);
+	Controls.ShowCitrusResources:SetCheck(val);
+	Controls.ShowSpicesResources:SetCheck(val);
+	Controls.ShowIvoryResources:SetCheck(val);
+	Controls.ShowIncenseResources:SetCheck(val);
+	Controls.ShowGoldResources:SetCheck(val);
+	Controls.ShowPearlsResources:SetCheck(val);
+	Controls.ShowClovesResources:SetCheck(val);
+	Controls.ShowSaltResources:SetCheck(val);
+	Controls.ShowGemsResources:SetCheck(val);
+	Controls.ShowSugarResources:SetCheck(val);
+	Controls.ShowSilkResources:SetCheck(val);
+	Controls.ShowWineResources:SetCheck(val);
+	Controls.ShowSilverResources:SetCheck(val);
+	Controls.ShowTrufflesResources:SetCheck(val);
+	Controls.ShowPorcelainResources:SetCheck(val);
+	Controls.ShowPepperResources:SetCheck(val);
+	Controls.ShowWhalesResources:SetCheck(val);
+	Controls.ShowCocoaResources:SetCheck(val);
+
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_COTTON", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_FUR", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_DYE", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_COPPER", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_MARBLE", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_JEWELRY", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_NUTMEG", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_CRAB", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_CITRUS", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_SPICES", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_IVORY", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_INCENSE", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_GOLD", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_PEARLS", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_CLOVES", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_SALT", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_GEMS", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_SUGAR", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_SILK", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_WINE", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_SILVER", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_TRUFFLES", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_PORCELAIN", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_PEPPER", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_WHALE", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_COCOA", val);
+
+	LuaEvents.RefreshResourceIcons(); --only refresh once
+	Events.StrategicViewStateChanged();
+end
+
+function OnbtnLuxuryClearClick()
+	SetAllLuxury(false);
+end
+Controls.btnLuxuryClear:RegisterCallback(Mouse.eLClick, OnbtnLuxuryClearClick) --Bind event to button
+
+function OnbtnLuxuryAllClick()
+	SetAllLuxury(true);
+end
+Controls.btnLuxuryAll:RegisterCallback(Mouse.eLClick, OnbtnLuxuryAllClick) --Bind event to button
+
+function SetAllBonus(val)
+	Controls.ShowBananaResources:SetCheck(val);
+	Controls.ShowCattleResources:SetCheck(val);
+	Controls.ShowBisonResources:SetCheck(val);
+	Controls.ShowWheatResources:SetCheck(val);
+	Controls.ShowSheepResources:SetCheck(val);
+	Controls.ShowDeerResources:SetCheck(val);
+	Controls.ShowFishResources:SetCheck(val);
+	Controls.ShowStoneResources:SetCheck(val);
+
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_BANANA", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_COW", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_BISON", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_WHEAT", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_SHEEP", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_DEER", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_FISH", val);
+	LuaEvents.SetShowResourceIconsValue("RESOURCE_STONE", val);
+	
+	LuaEvents.RefreshResourceIcons(); --only refresh once
+	Events.StrategicViewStateChanged();
+end
+
+function OnbtnBonusClearClick()
+	SetAllBonus(false);
+end
+Controls.btnBonusClear:RegisterCallback(Mouse.eLClick, OnbtnBonusClearClick) --Bind event to button
+
+function OnbtnBonusAllClick()
+	SetAllBonus(true);
+end
+Controls.btnBonusAll:RegisterCallback(Mouse.eLClick, OnbtnBonusAllClick) --Bind event to button
 
 -- *************************************************************
 -- * Resources Toggle event managers 
@@ -33,14 +168,20 @@ LuaEvents.LuaEventHideResourceFilterDialog.Add(HideFilterDialog)  --Make event a
 -- **********************BASE RESOURCES*********************************** 
 function OnShowAntiquityResourcesChecked(bIsChecked)
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_ARTIFACTS");
-	LuaEvents.ToggleShowResourceIcons("RESOURCE_HIDDEN_ARTIFACTS");
 	LuaEvents.RefreshResourceIcons(); --only refresh once
 	Events.StrategicViewStateChanged();
 end
 Controls.ShowAntiquityResources:RegisterCheckHandler(OnShowAntiquityResourcesChecked);
 
+function OnShowHiddenAntiquityResourcesChecked(bIsChecked)
+	LuaEvents.ToggleShowResourceIcons("RESOURCE_HIDDEN_ARTIFACTS");
+	LuaEvents.RefreshResourceIcons(); --only refresh once
+	Events.StrategicViewStateChanged();
+end
+Controls.ShowHiddenAntiquityResources:RegisterCheckHandler(OnShowHiddenAntiquityResourcesChecked);
+
 function OnShowAluminiumResourcesChecked(bIsChecked)
-	LuaEvents.ToggleShowResourceIcons("RESOURCE_ALUMINIUM");
+	LuaEvents.ToggleShowResourceIcons("RESOURCE_ALUMINUM");
 	LuaEvents.RefreshResourceIcons(); --only refresh once
 	Events.StrategicViewStateChanged();
 end
@@ -85,7 +226,7 @@ Controls.ShowUraniumResources:RegisterCheckHandler(OnShowUraniumResourcesChecked
 -- **********************BONUS RESOURCES***********************************
 function OnShowBonusResourcesChecked(bIsChecked)
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_BANANA");
-	LuaEvents.ToggleShowResourceIcons("RESOURCE_CATTLE");
+	LuaEvents.ToggleShowResourceIcons("RESOURCE_COW");
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_BISON");
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_WHEAT");
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_SHEEP");
@@ -98,19 +239,19 @@ function OnShowBonusResourcesChecked(bIsChecked)
 end
 --Controls.ShowBonusResources:RegisterCheckHandler(OnShowBonusResourcesChecked);
 
-function OnShowBananaResourceChecked(bIsChecked)
+function OnShowBananaResourcesChecked(bIsChecked)
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_BANANA");
 	LuaEvents.RefreshResourceIcons(); --only refresh once
 	Events.StrategicViewStateChanged();
 end
-Controls.ShowBananaResource:RegisterCheckHandler(OnShowBananaResourceChecked);
+Controls.ShowBananaResources:RegisterCheckHandler(OnShowBananaResourcesChecked);
 
-function OnShowCattleResourceChecked(bIsChecked)
-	LuaEvents.ToggleShowResourceIcons("RESOURCE_CATTLE");	
+function OnShowCattleResourcesChecked(bIsChecked)
+	LuaEvents.ToggleShowResourceIcons("RESOURCE_COW");	
 	LuaEvents.RefreshResourceIcons(); --only refresh once
 	Events.StrategicViewStateChanged();
 end
-Controls.ShowCattleResource:RegisterCheckHandler(OnShowCattleResourceChecked);
+Controls.ShowCattleResources:RegisterCheckHandler(OnShowCattleResourcesChecked);
 
 function OnShowBisonResourcesChecked(bIsChecked)
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_BISON");	
@@ -158,8 +299,8 @@ Controls.ShowDeerResources:RegisterCheckHandler(OnShowDeerResourcesChecked);
 --Note: must find a way to pass a parameter to event handler
 function OnShowLuxuryResourcesChecked(bIsChecked)
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_COTTON");
-	LuaEvents.ToggleShowResourceIcons("RESOURCE_FURS");
-	LuaEvents.ToggleShowResourceIcons("RESOURCE_DYES");
+	LuaEvents.ToggleShowResourceIcons("RESOURCE_FUR");
+	LuaEvents.ToggleShowResourceIcons("RESOURCE_DYE");
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_COPPER");
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_MARBLE");
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_JEWELRY");
@@ -181,7 +322,7 @@ function OnShowLuxuryResourcesChecked(bIsChecked)
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_TRUFFLES");
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_PORCELAIN");
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_PEPPER");
-	LuaEvents.ToggleShowResourceIcons("RESOURCE_WHALES");
+	LuaEvents.ToggleShowResourceIcons("RESOURCE_WHALE");
 	LuaEvents.ToggleShowResourceIcons("RESOURCE_COCOA");
 	
 	LuaEvents.RefreshResourceIcons(); --only refresh once
@@ -197,14 +338,14 @@ end
 Controls.ShowCottonResources:RegisterCheckHandler(OnShowCottonResourcesChecked);
 
 function OnShowFursResourcesChecked(bIsChecked)
-	LuaEvents.ToggleShowResourceIcons("RESOURCE_FURS");	
+	LuaEvents.ToggleShowResourceIcons("RESOURCE_FUR");	
 	LuaEvents.RefreshResourceIcons(); --only refresh once
 	Events.StrategicViewStateChanged();
 end
 Controls.ShowFursResources:RegisterCheckHandler(OnShowFursResourcesChecked);
 
 function OnShowDyesResourcesChecked(bIsChecked)
-	LuaEvents.ToggleShowResourceIcons("RESOURCE_DYES");	
+	LuaEvents.ToggleShowResourceIcons("RESOURCE_DYE");	
 	LuaEvents.RefreshResourceIcons(); --only refresh once
 	Events.StrategicViewStateChanged();
 end
@@ -358,7 +499,7 @@ end
 Controls.ShowPepperResources:RegisterCheckHandler(OnShowPepperResourcesChecked);
 
 function OnShowWhalesResourcesChecked(bIsChecked)
-	LuaEvents.ToggleShowResourceIcons("RESOURCE_WHALES");	
+	LuaEvents.ToggleShowResourceIcons("RESOURCE_WHALE");	
 	LuaEvents.RefreshResourceIcons(); --only refresh once
 	Events.StrategicViewStateChanged();
 end

@@ -26,7 +26,7 @@ local bOnlyAntiquityIcons = false;
 local bResourceVisibilityTable = {
 	RESOURCE_ARTIFACTS = true,
 	RESOURCE_HIDDEN_ARTIFACTS = true,
-	RESOURCE_ALUMINIUM = true,
+	RESOURCE_ALUMINUM = true,
 	RESOURCE_COAL = true,
 	RESOURCE_HORSE = true,
 	RESOURCE_IRON = true,
@@ -34,7 +34,7 @@ local bResourceVisibilityTable = {
 	RESOURCE_URANIUM = true,
 	--BONUS
 	RESOURCE_BANANA = true,
-	RESOURCE_CATTLE = true,
+	RESOURCE_COW = true,
 	RESOURCE_BISON = true,
 	RESOURCE_WHEAT = true,
 	RESOURCE_SHEEP = true,
@@ -43,8 +43,8 @@ local bResourceVisibilityTable = {
 	RESOURCE_STONE = true,
 	--LUXURY
 	RESOURCE_COTTON = true,
-	RESOURCE_FURS = true,
-	RESOURCE_DYES = true,
+	RESOURCE_FUR = true,
+	RESOURCE_DYE = true,
 	RESOURCE_COPPER = true,
 	RESOURCE_MARBLE = true,
 	RESOURCE_JEWELRY = true,
@@ -66,10 +66,11 @@ local bResourceVisibilityTable = {
 	RESOURCE_TRUFFLES = true,
 	RESOURCE_PORCELAIN = true,
 	RESOURCE_PEPPER = true,
-	RESOURCE_WHALES = true,
+	RESOURCE_WHALE = true,
 	RESOURCE_COCOA = true
 };
 
+local fResourceIndex = 0;
 
 -- **************************************************************
 -- * This function updates the visibility of specific resources *
@@ -84,12 +85,21 @@ LuaEvents.ToggleShowResourceIcons.Add(
 	end
 );
 
+LuaEvents.SetShowResourceIconsValue.Add(
+	function(sResourceName, val)
+		bResourceVisibilityTable[sResourceName] = val;
+	end
+);
+
 
 -- ******************************************************
 -- * This function updates refreshes the resource icons *
 -- ******************************************************
 LuaEvents.RefreshResourceIcons.Add(
 	function()
+		-- Reset the filter index
+		fResourceIndex = 0;
+
 		-- Reset the resource data.
 		for index, pResource in pairs( g_ActiveSet ) do
 			DestroyResource( index );
@@ -104,6 +114,63 @@ LuaEvents.RefreshResourceIcons.Add(
 				BuildResource( index, gridX, gridY, resource );
    			end
    		end
+	end
+);
+
+
+-- This function determines if a resource is visible
+function IsResourceVisisble(resourceType)
+	if (g_bHideResourceIcons or bResourceVisibilityTable[resourceType] == false) then
+		return false;
+	else
+		return true;
+	end
+end
+
+-- ******************************************************************
+--- * This function looks at the next visible resource *
+-- ******************************************************************
+LuaEvents.SpotNextResourcePlot.Add(
+	function ()
+		local iActivePlayer = Game.GetActivePlayer();		
+		local playerResourceTable = g_PerPlayerResourceTables[ iActivePlayer ];
+		local i = 0;
+		local pActivePlot = Map.GetPlot(1, 1);
+
+		-- iterate through all resources.
+		if (playerResourceTable ~= nil) then
+			for index, resource in pairs( playerResourceTable ) do
+
+				local resourceInfo = GameInfo.Resources[resource];
+
+				if (IsResourceVisisble(resourceInfo.Type) == true) then
+					if (i == fResourceIndex) then
+						local gridX, gridY = GridFromIndex(index);
+						pActivePlot = Map.GetPlot( gridX, gridY );
+					
+						--debug
+						--print("Found plot #" .. fResourceIndex .. " (" .. gridX .. ", " .. gridY .. ")");
+					
+					
+						UI.LookAt(pActivePlot);
+						--dont break, I need the total table length
+					end
+
+					i  = i + 1;
+				end
+   			end
+   		end
+
+		--check if that was the last item in table
+		if (i == fResourceIndex) then
+			--at end, get back to start
+			fResourceIndex = 0;
+		else
+			--next resource
+			fResourceIndex = fResourceIndex + 1;
+		end
+
+		return pActivePlot;
 	end
 );
 
@@ -147,7 +214,8 @@ function BuildResource( index, gridX, gridY, resourceType )
 										 										 
 	local resourceInfo = GameInfo.Resources[resourceType];
 
-	if (g_bHideResourceIcons or bResourceVisibilityTable[resourceInfo.Type] == false) then
+	--if (g_bHideResourceIcons or bResourceVisibilityTable[resourceInfo.Type] == false) then
+	if (IsResourceVisisble(resourceInfo.Type) == false) then
 		DestroyResource(index);
 		return;
 	end

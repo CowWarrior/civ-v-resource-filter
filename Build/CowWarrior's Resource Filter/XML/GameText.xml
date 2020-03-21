@@ -8,7 +8,13 @@
 		</Row>
 		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_FILTER_BUTTON">
 			<Text>Filter</Text>
-		</Row>	
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_FIND_TT">
+			<Text>Find the next resource</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MAP_OPTIONS_RESOURCE_FIND_BUTTON">
+			<Text>Find</Text>
+		</Row>
 	</Language_en_US>
   
 </GameData>
